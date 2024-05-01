@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mayur Education Campus - Contact Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">MAYUR EDUCATION CAMPUS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">Our Hostel</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="kumarchhatralay.html">Kumar Chatralay</a>
+                        <a class="dropdown-item" href="asharamshalahoste.html">Asharam Shala</a>
+                        <a class="dropdown-item" href="girlshostel.html">Girls Hostel</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">Our School</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="asharamshalaschool.html">Ashram Shala School</a>
+                        <a class="dropdown-item" href="gmdc.html">GMDC School</a>
+                        <a class="dropdown-item" href="science.html">Science School</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">Our College</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="ba.html">Bachelor of Arts</a>
+                        <a class="dropdown-item" href="bsc.html">Bachelor of Science</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">Achievements</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="studentresult.html">Student Results</a>
+                        <a class="dropdown-item" href="gallery.html">Gallery</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">Contact Us</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="admison.html">Admission Enquiry</a>
+                        <a class="dropdown-item" href="contact.html">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+  <!-- Contact Form -->
+  <div class="container mt-4">
+    <h2>Admission Form</h2>
+    <form id="contact-form" class="horizontal-form" onsubmit="handleSubmit(event)">
+      <!-- Student Details -->
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="fname">First Name</label>
+          <input type="text" class="form-control" name="fname" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="sname">Second Name</label>
+          <input type="text" class="form-control" name="sname" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="lname">Last Name</label>
+          <input type="text" class="form-control" name="lname" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="gender">Gender</label>
+          <select class="form-control" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="dob">Date of Birth</label>
+          <input type="date" class="form-control" name="dob" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="admissionStandard">Admission Standard</label>
+          <input type="text" class="form-control" name="admissionStandard" required>
+        </div>
+      </div>
+      <!-- Parent Details -->
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="parentFname">Parent First Name</label>
+          <input type="text" class="form-control" name="parentFname" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="parentLname">Parent Last Name</label>
+          <input type="text" class="form-control" name="parentLname" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" name="email" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="mobile">Mobile Number</label>
+          <input type="tel" class="form-control" name="mobile" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="education">Education</label>
+          <input type="text" class="form-control" name="education" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="address">Address</label>
+          <textarea class="form-control" name="address" required></textarea>
+        </div>
+      </div>
+      <!-- Submit Button -->
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    <p id="message" class="text-success"></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Hostels</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Kumar Chatralay</a></li>
+            <li><a href="#" class="text-white">Asharam Shala</a></li>
+            <li><a href="#" class="text-white">Girls Hostel</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Schools</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Ashram Shala School</a></li>
+            <li><a href="#" class="text-white">GMDC School</a></li>
+            <li><a href="#" class="text-white">Science School</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Colleges</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Bachelor of Arts</a></li>
+            <li><a href="#" class="text-white">Bachelor of Science</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Achievements</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Student Results</a></li>
+            <li><a href="#" class="text-white">Gallery</a></li>
+            <li><a href="#" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center">
+        <h1>MAYUR EDUCATION CAMPUS</h1>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/mayur_education_campus_nandana/" class="text-white">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/mayursankul.nandana?locale=en_GB" class="text-white">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+        <section id="copy-right">
+          <p><i class="fa fa-copyright"></i> © 2024 All Rights Reserved. <a href="#" class="text-white">MAYUR EDUCATION CAMPUS</a></p>
+        </section>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <!-- Bootstrap and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    async function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const formData = new FormData(form);
+
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwXZWFGjtUAJCzdt03br5mf7bW47asLPyRPABmO65F48i0A7Wa6zRlFeIMxq9dxFxvE/exec";
+
+      try {
+        const response = await fetch(scriptURL, {
+          method: "POST",
+          body: formData,
+        });
+
+        const message = document.getElementById("message");
+
+        if (response.ok) {
+          message.textContent = "Message sent successfully";
+          setTimeout(() => {
+            message.textContent = "";
+          }, 3000);
+          form.reset();
+        } else {
+          throw new Error("Failed to send message");
+        }
+      } catch (error) {
+        console.error("Error!", error.message);
+      }
+    }
+  </script>
+</body>
+</html>

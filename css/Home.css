@@ -1,0 +1,484 @@
+    /* App.css */
+
+    /* Navbar styles */
+    .navbar {
+        background-color: #3498db;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    
+    .logo {
+        font-size: 1.5em;
+    }
+    
+    .nav-list {
+        list-style: none;
+        display: flex;
+    }
+    
+    .nav-item {
+        margin: 0 15px;
+        cursor: pointer;
+    }
+    
+    /* Dropdown styles */
+    .dropdown {
+        position: relative;
+    }
+    
+    .dropdown-toggle {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #2980b9;
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+    
+    .dropdown-item {
+        color: white;
+        padding: 8px 0;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .dropdown-item:hover {
+        background-color: #2c3e50;
+    }
+    
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    /* index.css */
+.fullscreen-image {
+    /* Add styles for the fullscreen image, such as setting background-image */
+    height: 100vh; /* Make it fullscreen */
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .vertical-boxes {
+    /* Add styles for the three vertical boxes */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px; /* Adjust the height as needed */
+  }
+  
+  /* Add additional styling for the Navbar and other elements as needed */
+  
+  .mayur1{
+    width: 1483px;
+  }
+
+  .vertical-boxes {
+    display: flex;    
+  }
+  
+  .box {
+    width: 20%; /* Adjust the width of each box as needed */
+    height: 200px; /* Adjust the height of each box as needed */
+    background-color: #3498db; /* Adjust the background color as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .box img {
+    width: 100%; /* Make the image fill the container */
+    max-height: 50%; /* Limit the height of the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  
+  /* YourComponent.css */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+  }
+  
+  .right-image {
+    max-width: 5%; /* Adjust the width as needed */
+    height: auto;
+  }
+  .kumarchat{
+    width: 400px;
+    height: 500px;
+    padding-left: 100px;
+    padding-top: 50px;
+    border-radius: 20px;
+  }
+  
+  .left-paragraph {
+    font-size: 30px;
+    max-width: 40%;
+    padding-right: 10%;
+  }
+  
+  .right-image {
+    max-width: 40%; /* Adjust the width as needed */
+    height: auto;
+}
+
+.left-paragraph {
+    font-size: 30px;
+    max-width: 50%;
+    padding-left: 10%;
+}
+
+/* ImageContainer.css */
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  
+  .rounded-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  
+  .vertical-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333; /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  
+  .menu a {
+    color: #fff; /* Change the text color as needed */
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .logo img {
+    max-width: 100px; /* Adjust the max-width as needed */
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    max-width: 30px; /* Adjust the max-width as needed */
+  }
+  
+  /* Additional styling for better aesthetics */
+  p {
+    margin: 0;
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+  
+  .logof{
+    font-size: 80%;
+    padding-left: 90px;
+  }
+
+  .icon{
+    height: 8%;
+  }
+  .ficon{
+    height: 5%;
+  }
+
+  .copy-right-sec{
+    text-align: center;
+  }
+  .copy-right-sec a{
+    color: rgb(255, 255, 255);
+  }
+
+  .menu h3{
+    margin: 10px;
+  }
+
+  /* Kumarchatralay css */
+
+
+  p {
+    margin: 0;
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+  
+  .logof{
+    font-size: 80%;
+    padding-left: 90px;
+  }
+
+  .icon{
+    height: 8%;
+  }
+  .ficon{
+    height: 5%;
+  }
+
+  .copy-right-sec{
+    text-align: center;
+  }
+  .copy-right-sec a{
+    color: rgb(255, 255, 255);
+  }
+
+  .menu h3{
+    margin: 10px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+  
+  .kumarchatra{
+    width: 1333px;
+    height: 500px;
+  }
+
+  /* styles.css */
+
+.image-container {
+    display: flex;
+  }
+  
+  .gallery-image {
+    width: 300px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 20px;
+  }
+  
+  .left-paragraphab{
+    font-size: 20px;
+    max-width: 40%;
+    text-align: center;
+    margin-left: 450px;
+  }
+
+  .logof{
+    font-size: 80%;
+    padding-left: 90px;
+  }
+
+  .icon{
+    height: 8%;
+  }
+  .ficon{
+    height: 5%;
+  }
+
+  .copy-right-sec{
+    text-align: center;
+  }
+  .copy-right-sec a{
+    color: rgb(255, 255, 255);
+  }
+
+  .menu h3{
+    margin: 10px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+  
+  .trustiimg{
+    width: 250px;
+    height: 250px;
+    padding-left: 100px;
+    padding-top: 50px;
+    border-radius: 20px;
+  }
+  
+  .left-paragraph {
+    font-size: 20px;
+    
+    padding-right: 10%;
+  }
+  .left-paragraphab{
+    font-size: 20px;
+    max-width: 40%;
+    text-align: center;
+    margin-left: 450px;
+  }
+
+  /* Contact us CSS */
+
+  /* Home.css */
+
+.contact-right {
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+}
+.contact-right h2{
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#msg {
+  color: #4caf50;
+  margin-top: 10px;
+}
+
+
+/* Home.css */
+
+.admission-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.horizontal-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Add some styling to make the form more visually appealing */
+
+.admission-form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #333;
+}
+
+input,
+select {
+  padding: 12px;
+}
+
+/* Add hover effect for better user experience */
+
+.input-group:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+/* Customize the submit button */
+
+.submit-button {
+  
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.submit-button button{
+  width: 550px;
+  background-color: #ff6f00;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button button:hover{
+  background-color: #ff6593;
+}
